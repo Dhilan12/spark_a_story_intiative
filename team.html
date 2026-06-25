@@ -1,81 +1,135 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spark a Story</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header>
-  <div class="header-container">
-    <div class="logo">
-      <img src="p.png" class="logo-img" alt="Spark a Story Logo">
-      <div class="logo-text">Spark a Story</div>
-    </div>
-
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="mission.html">Mission</a>
-      <a href="programs.html">Programs</a>
-      <a href="team.html">Team</a>
-      <a href="support.html">Support</a>
-    </nav>
-  </div>
-</header>
-
-<section class="section">
+<section class="section team-section">
   <h2>Meet the Team</h2>
 
-  <p>
+  <p style="text-align:center; margin-bottom:80px;">
     Spark a Story is led by students passionate about storytelling and education.
   </p>
 
-  <div class="card-grid">
+  <!-- Founder -->
+  <div class="team-member">
+    <div class="team-image">
+      <img src="dhilan.jpg" alt="Dhilan Saluja">
+    </div>
 
-    <div class="card">
+    <div class="team-content">
       <h3>Dhilan Saluja</h3>
       <div class="role">Founder</div>
+
       <p>
         Dhilan is an 8th grade student at St. Mark's School of Texas.
-        He writes primarily science fiction and poetry and recently
-        earned a National Scholastic Gold Medal in Poetry. Outside of writing,
+        He writes primarily science fiction and poetry and recently earned
+        a National Scholastic Gold Medal in Poetry. Outside of writing,
         he enjoys basketball, tennis, science, and math.
       </p>
     </div>
+  </div>
 
-    <div class="card">
+  <!-- Future Team Member -->
+  <div class="team-member reverse">
+    <div class="team-image">
+      <img src="placeholder.jpg" alt="Future Team Member">
+    </div>
+
+    <div class="team-content">
       <h3>Future Team Member</h3>
       <div class="role">Volunteer</div>
+
       <p>
-        Interested in joining Spark a Story? We’re always looking for students
-        who love helping others write. If you are interested in becoming part
-        of the team, please email sparkastoryfrisco@gmail.com.
+        Interested in joining Spark a Story? We are always looking for
+        students who love helping others write. If you are interested in
+        becoming part of the team, please email
+        sparkastoryfrisco@gmail.com.
       </p>
     </div>
+  </div>
 
-    <div class="card">
+  <!-- Volunteer -->
+  <div class="team-member">
+    <div class="team-image">
+      <img src="placeholder.jpg" alt="Volunteer">
+    </div>
+
+    <div class="team-content">
       <h3>Volunteer</h3>
       <div class="role">Volunteer</div>
+
       <p>
-        Join our team to support young writers through workshops, mentorship,
-        and events that help students grow as storytellers.
+        Join our team to support young writers through workshops,
+        mentorship, and events that help students grow as storytellers.
       </p>
     </div>
-
   </div>
 </section>
 
-<footer>
-  © 2026 Spark a Story | Youth-Led Nonprofit
-</footer>
+<style>
+  .team-section {
+    max-width: 1400px;
+    margin: auto;
+    padding: 80px 40px;
+  }
 
-</body>
-</html>
-```
+  .team-member {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin: 100px 0;
+  }
+
+  .team-member.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .team-image {
+    flex: 1;
+  }
+
+  .team-image img {
+    width: 100%;
+    max-width: 650px;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
+  }
+
+  .team-content {
+    flex: 1;
+  }
+
+  .team-content h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1;
+  }
+
+  .role {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #555;
+  }
+
+  .team-content p {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    max-width: 550px;
+  }
+
+  @media (max-width: 900px) {
+    .team-member,
+    .team-member.reverse {
+      flex-direction: column;
+      text-align: center;
+      gap: 40px;
+    }
+
+    .team-content h3 {
+      font-size: 3rem;
+    }
+
+    .team-content p {
+      max-width: 100%;
+    }
+  }
+</style>

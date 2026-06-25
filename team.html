@@ -1,7 +1,113 @@
-<section class="section team-section">
-  <h2>Meet the Team</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet the Team - Spark a Story</title>
 
-  <p style="text-align:center; margin-bottom:80px;">
+  <!-- Upgraded Editorial Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ===== CUSTOM TEAM STYLES (Aligned with global system) ===== */
+    
+    .team-intro {
+      margin-bottom: 3rem;
+    }
+
+    /* Team Member Row Layout */
+    .team-member {
+      display: flex;
+      align-items: center;
+      gap: 3.5rem;
+      margin: 4.5rem 0;
+    }
+
+    /* Alternating layout configuration */
+    .team-member.reverse {
+      flex-direction: row-reverse;
+    }
+
+    /* Left/Right Structure */
+    .team-image, 
+    .team-content {
+      flex: 1;
+    }
+
+    /* Images match the crisp, flat design rules of cards */
+    .team-image img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      display: block;
+      border: 1px solid var(--border);
+      border-radius: 0; /* Forced crisp edges */
+    }
+
+    /* Text Components */
+    .team-content h3 {
+      font-size: 2.4rem;
+      margin-bottom: 0.2rem;
+      color: var(--text);
+    }
+
+    /* Clean subtle label matching site design tokens */
+    .role {
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .team-content p {
+      font-size: 1.15rem;
+      line-height: 1.75;
+    }
+
+    /* Mobile Responsive Layout Override */
+    @media (max-width: 900px) {
+      .team-member,
+      .team-member.reverse {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        margin: 3.5rem 0;
+      }
+
+      .team-content h3 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <img src="p.png" class="logo-img" alt="Spark a Story Logo">
+      <div class="logo-text">Spark a Story</div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="mission.html">Mission</a>
+      <a href="programs.html">Programs</a>
+      <a href="team.html">Team</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Standard Section Container Inheriting global white card structure -->
+<section class="section">
+  <h2>Meet the Team</h2>
+  
+  <p class="team-intro">
     Spark a Story is led by students passionate about storytelling and education.
   </p>
 
@@ -14,7 +120,6 @@
     <div class="team-content">
       <h3>Dhilan Saluja</h3>
       <div class="role">Founder</div>
-
       <p>
         Dhilan is an 8th grade student at St. Mark's School of Texas.
         He writes primarily science fiction and poetry and recently earned
@@ -33,12 +138,11 @@
     <div class="team-content">
       <h3>Future Team Member</h3>
       <div class="role">Volunteer</div>
-
       <p>
         Interested in joining Spark a Story? We are always looking for
         students who love helping others write. If you are interested in
-        becoming part of the team, please email
-        sparkastoryfrisco@gmail.com.
+        becoming part of the team, please email 
+        <a href="mailto:sparkastoryfrisco@gmail.com" style="color: var(--accent); text-decoration: none; font-weight: 600;">sparkastoryfrisco@gmail.com</a>.
       </p>
     </div>
   </div>
@@ -52,7 +156,6 @@
     <div class="team-content">
       <h3>Volunteer</h3>
       <div class="role">Volunteer</div>
-
       <p>
         Join our team to support young writers through workshops,
         mentorship, and events that help students grow as storytellers.
@@ -61,75 +164,9 @@
   </div>
 </section>
 
-<style>
-  .team-section {
-    max-width: 1400px;
-    margin: auto;
-    padding: 80px 40px;
-  }
+<footer>
+  © 2026 Spark a Story | Youth-Led Nonprofit
+</footer>
 
-  .team-member {
-    display: flex;
-    align-items: center;
-    gap: 80px;
-    margin: 100px 0;
-  }
-
-  .team-member.reverse {
-    flex-direction: row-reverse;
-  }
-
-  .team-image {
-    flex: 1;
-  }
-
-  .team-image img {
-    width: 100%;
-    max-width: 650px;
-    height: 450px;
-    object-fit: cover;
-    display: block;
-    border-radius: 6px;
-  }
-
-  .team-content {
-    flex: 1;
-  }
-
-  .team-content h3 {
-    font-family: "Playfair Display", serif;
-    font-size: 5rem;
-    font-weight: 500;
-    margin-bottom: 20px;
-    line-height: 1;
-  }
-
-  .role {
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-    color: #555;
-  }
-
-  .team-content p {
-    font-size: 1.15rem;
-    line-height: 1.9;
-    max-width: 550px;
-  }
-
-  @media (max-width: 900px) {
-    .team-member,
-    .team-member.reverse {
-      flex-direction: column;
-      text-align: center;
-      gap: 40px;
-    }
-
-    .team-content h3 {
-      font-size: 3rem;
-    }
-
-    .team-content p {
-      max-width: 100%;
-    }
-  }
-</style>
+</body>
+</html>

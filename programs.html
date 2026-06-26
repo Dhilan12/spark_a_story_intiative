@@ -1,138 +1,85 @@
-<section class="section team-section">
-  <h2>Meet the Team</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programs | Spark a Story</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <img src="p.png" class="logo-img">
+      <div class="logo-text">Spark a Story</div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="mission.html">Mission</a>
+      <a href="programs.html">Programs</a>
+      <a href="team.html">Team</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <h2>Programs & Workshops</h2>
   <p>
-    Spark a Story is led by students passionate about storytelling and education.
+    Spark a Story offers free writing programs designed to help students turn ideas into
+    complete, meaningful stories — and, for those who choose, published work.
   </p>
 
-  <!-- Founder -->
-  <div class="team-member">
-
-    <div class="team-image">
-      <img src="dhilan.jpg" alt="Dhilan Saluja">
+  <div class="card-grid">
+    <div class="card">
+      <h3>Writing & Publishing Bootcamp</h3>
+      <p><strong>February 15 – March 8 · Ages 8–11</strong></p>
+      <p>
+        A four-week guided writing experience where students develop a complete short story
+        from concept to final draft — with the option to be published in Spark a Story’s
+        student literary collection.
+      </p>
+      <ul>
+        <li><strong>Week 1:</strong> Story ideas & character building</li>
+        <li><strong>Week 2:</strong> Plot, conflict, and structure</li>
+        <li><strong>Week 3:</strong> Writing, editing, and peer feedback</li>
+        <li><strong>Week 4:</strong> Final draft & publishing process</li>
+      </ul>
     </div>
 
-    <div class="team-content">
-      <h3>Dhilan Saluja</h3>
-      <div class="role">Founder</div>
-
+    <div class="card">
+      <h3>Science Fiction Writing Contest</h3>
+      <p><strong>Coming Soon</strong></p>
       <p>
-        Dhilan is an 8th grade student at St. Mark's School of Texas.
-        He writes primarily science fiction and poetry and recently earned
-        a National Scholastic Gold Medal in Poetry. Outside of writing,
-        he enjoys tennis, basketball, and physics.
+        A creative writing competition for elementary and middle school students,
+        encouraging imagination, originality, and storytelling skill.
       </p>
     </div>
 
-  </div>
-
-  <!-- Future Team Member -->
-  <div class="team-member reverse">
-
-    <div class="team-image">
-      <img src="placeholder.jpg" alt="Future Team Member">
-    </div>
-
-    <div class="team-content">
-      <h3>Future Team Member</h3>
-      <div class="role">Volunteer</div>
-
+    <div class="card">
+      <h3>Mentorship Program</h3>
       <p>
-        Interested in joining Spark a Story? We are always looking for
-        students who love helping others write. Email us at
-        sparkastoryfrisco@gmail.com.
+        One-on-one guidance for young writers who want individualized feedback
+        and encouragement. Free, with limited spots available.
       </p>
     </div>
-
   </div>
 
-  <!-- Volunteer -->
-  <div class="team-member">
-
-    <div class="team-image">
-      <img src="placeholder.jpg" alt="Volunteer">
-    </div>
-
-    <div class="team-content">
-      <h3>Volunteer</h3>
-      <div class="role">Volunteer</div>
-
-      <p>
-        Join our team to support young writers through workshops,
-        mentorship, and events that help students grow as storytellers.
-      </p>
-    </div>
-
+  <!-- Program Interest Form -->
+  <div class="form-container">
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSe4V-C81DyT8MC5tbCA29qNiNpdIp5nylXcbTuJW0cKBlsErA/viewform?usp=publish-editor" 
+      height="800">
+    </iframe>
   </div>
+
 </section>
 
-<style>
-/* ===== TEAM SECTION (matches your site system) ===== */
+<footer>
+  © 2026 Spark a Story | Youth-Led Nonprofit
+</footer>
 
-.team-section p {
-  font-size: 1.2rem;
-  max-width: 800px;
-  margin: 1rem auto 3rem auto;
-  text-align: center;
-}
-
-/* MAIN LAYOUT */
-.team-member {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  margin: 4rem 0;
-}
-
-/* flip layout */
-.team-member.reverse {
-  flex-direction: row-reverse;
-}
-
-/* IMAGE SIDE */
-.team-image {
-  flex: 1;
-}
-
-.team-image img {
-  width: 100%;
-  max-height: 420px;
-  object-fit: cover;
-  border: 1px solid var(--border);
-}
-
-/* TEXT SIDE */
-.team-content {
-  flex: 1;
-}
-
-.team-content h3 {
-  font-size: 2.4rem;
-  margin-bottom: 0.3rem;
-}
-
-.role {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 1rem;
-}
-
-/* paragraph matches your global style but tighter */
-.team-content p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-}
-
-/* MOBILE RESPONSIVE */
-@media (max-width: 900px) {
-  .team-member,
-  .team-member.reverse {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .team-content h3 {
-    font-size: 2rem;
-  }
-}
-</style>
+</body>
+</html>
